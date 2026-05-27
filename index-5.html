@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Forward-Looking Allocation in Ukraine's e-Points System</title>
+<meta name="description" content="An independent concept note on whether a controlled lending-pool mechanism could help Ukrainian units better align e-Points access with forward-looking operational need." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1a18;
+    --ink-mid: #4a4a45;
+    --ink-light: #7a7a72;
+    --rule: #d4d2c8;
+    --page: #f9f7f2;
+    --cream: #f2efe8;
+    --accent: #1a3a5c;
+    --accent-light: #e8edf4;
+  }
+
+  html { font-size: 16px; }
+
+  body {
+    background-color: var(--page);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding: 0 1.5rem;
+  }
+
+  .wrapper {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 5rem 0 6rem;
+  }
+
+  .eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 2rem;
+    max-width: 560px;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--ink-mid);
+  }
+
+  .rule {
+    width: 48px;
+    height: 1.5px;
+    background: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  .body-text {
+    color: var(--ink-mid);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 580px;
+  }
+
+  .body-text + .body-text {
+    margin-top: -0.5rem;
+  }
+
+  .notice-box {
+    border-left: 2px solid var(--accent);
+    background: var(--accent-light);
+    padding: 1rem 1.25rem;
+    margin: 2.5rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .notice-box p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .contact-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .contact-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 0.6rem;
+  }
+
+  .contact-link {
+    font-size: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+
+  .contact-link:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .meta-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+  }
+
+  .meta-value {
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+
+  .version-tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.15rem 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: var(--ink-light);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  @media (max-width: 480px) {
+    .wrapper { padding: 3rem 0 4rem; }
+    body { padding: 0 1.25rem; }
+    h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <p class="eyebrow">Independent Policy Research &nbsp;·&nbsp; May 2026</p>
+
+  <h1>Forward-Looking Allocation in Ukraine's <em>e-Points</em> System</h1>
+
+  <div class="rule"></div>
+
+  <p class="body-text">
+    This independent concept note examines whether a controlled lending-pool mechanism could help Ukrainian units better align e-Points access with forward-looking operational need. The proposal is based only on public information and does not include tactical, locational, or unit-sensitive details.
+  </p>
+
+  <p class="body-text">
+    I am sharing this work selectively for feedback from Ukrainian practitioners, defense-innovation specialists, and researchers familiar with drone procurement and battlefield logistics.
+  </p>
+
+  <div class="notice-box">
+    <p>
+      This project is independent and does not represent Princeton University, the Government of Ukraine, Brave1, Signum, or any military organization.
+    </p>
+  </div>
+
+  <p class="body-text">
+    For access to the concept note or full technical memo, please reach out directly. I welcome corrections, challenge, and perspective from those with operational knowledge I lack.
+  </p>
+
+  <div class="contact-section">
+    <p class="contact-label">Contact</p>
+    <a class="contact-link" href="mailto:ag1069@princeton.edu">ag1069@princeton.edu</a>
+  </div>
+
+  <div class="meta-row">
+    <div class="meta-item">
+      <span class="meta-label">Author</span>
+      <span class="meta-value">Alexander Grenier</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Affiliation</span>
+      <span class="meta-value">Princeton University <span style="color: var(--ink-light); font-size: 0.85rem;">(independent)</span></span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Document version</span>
+      <span class="version-tag">v1.0 &nbsp;·&nbsp; May 2026</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      This page exists solely to establish a public record of authorship and provide a contact point for interested parties. It is not intended for wide distribution. The full technical memo is available on request only.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
